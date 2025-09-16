@@ -13,7 +13,22 @@ function App() {
           <a href="#servicos" className="hover:text-blue-800">Serviços</a>
           <a href="#contato" className="hover:text-blue-800">Contato</a>
         </nav>
-      </header>
+      <header className="bg-gray-300 py-4 px-6 flex justify-between items-center">
+  {/* Logo */}
+  <img 
+    src="/logo-inovaseg.png" 
+    alt="InovaSeg Logo" 
+    className="h-10" // ajusta a altura (10 = 40px)
+  />
+
+  {/* Menu */}
+  <nav className="flex gap-6 text-sm font-semibold text-gray-700">
+    <a href="#home" className="hover:text-blue-800">Home</a>
+    <a href="#empresa" className="hover:text-blue-800">Empresa</a>
+    <a href="#servicos" className="hover:text-blue-800">Serviços</a>
+    <a href="#contato" className="hover:text-blue-800">Contato</a>
+  </nav>
+</header>
 
       {/* Hero Azul */}
       <section className="bg-blue-900 text-center py-16 px-4 text-white">
