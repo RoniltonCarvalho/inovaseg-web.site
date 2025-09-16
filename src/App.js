@@ -16,7 +16,7 @@ function App() {
       <header className="bg-gray-300 py-4 px-6 flex justify-between items-center">
   {/* Logo */}
   <img 
-    src="/logo-inovaseg.png" 
+    src="/logo-inovaseg.JPEG" 
     alt="InovaSeg Logo" 
     className="h-10" // ajusta a altura (10 = 40px)
   />
