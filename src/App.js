@@ -88,10 +88,10 @@ function App() {
           </p>
         </div>
         <img
-          src="https://placehold.co/400x250"
-          alt="Computador"
-          className="rounded shadow-md"
-        />
+  src="/notebook.jpg"
+  alt="Computador"
+  className="rounded shadow-md"
+/>
       </section>
 
     </div>
