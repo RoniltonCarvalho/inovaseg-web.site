@@ -3,32 +3,24 @@ import React from "react";
 function App() {
   return (
     <div className="font-sans text-gray-800">
-      
+
       {/* Barra cinza topo */}
       <header className="bg-gray-300 py-4 px-6 flex justify-between items-center">
-        <h1 className="text-xl font-bold text-yellow-500">InovaSeg</h1>
+        {/* Logo */}
+        <img
+          src="/logo-inovaseg.jpg"
+          alt="InovaSeg Logo"
+          className="h-10"
+        />
+
+        {/* Menu */}
         <nav className="flex gap-6 text-sm font-semibold text-gray-700">
           <a href="#home" className="hover:text-blue-800">Home</a>
           <a href="#empresa" className="hover:text-blue-800">Empresa</a>
           <a href="#servicos" className="hover:text-blue-800">Serviços</a>
           <a href="#contato" className="hover:text-blue-800">Contato</a>
         </nav>
-      <header className="bg-gray-300 py-4 px-6 flex justify-between items-center">
-  {/* Logo */}
-  <img 
-  src="/logo-inovaseg.jpg" 
-  alt="InovaSeg Logo" 
-  className="h-10"
-/>
-
-  {/* Menu */}
-  <nav className="flex gap-6 text-sm font-semibold text-gray-700">
-    <a href="#home" className="hover:text-blue-800">Home</a>
-    <a href="#empresa" className="hover:text-blue-800">Empresa</a>
-    <a href="#servicos" className="hover:text-blue-800">Serviços</a>
-    <a href="#contato" className="hover:text-blue-800">Contato</a>
-  </nav>
-</header>
+      </header>
 
       {/* Hero Azul */}
       <section className="bg-blue-900 text-center py-16 px-4 text-white">
@@ -45,6 +37,7 @@ function App() {
 
       {/* 3 Caixas com ícones */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 py-16 bg-white text-center">
+
         {/* Item 1 */}
         <div className="bg-white p-8 shadow-lg rounded-xl">
           <div className="h-20 w-20 rounded-full bg-blue-900 flex items-center justify-center mx-auto mb-4">
@@ -55,6 +48,7 @@ function App() {
             Atendemos todas as exigências legais e normativas do eSocial.
           </p>
         </div>
+
         {/* Item 2 */}
         <div className="bg-white p-8 shadow-lg rounded-xl">
           <div className="h-20 w-20 rounded-full bg-blue-900 flex items-center justify-center mx-auto mb-4">
@@ -65,6 +59,7 @@ function App() {
             Consultorias eficazes que reduzem riscos de trabalho.
           </p>
         </div>
+
         {/* Item 3 */}
         <div className="bg-white p-8 shadow-lg rounded-xl">
           <div className="h-20 w-20 rounded-full bg-blue-900 flex items-center justify-center mx-auto mb-4">
@@ -84,14 +79,15 @@ function App() {
             Engenharia especializada
           </h2>
           <p className="text-gray-700">
-            Nossa equipe oferece treinamentos, consultorias e apoio técnico para garantir segurança e conformidade.
+            Nossa equipe oferece treinamentos, consultorias e apoio técnico
+            para garantir segurança e conformidade.
           </p>
         </div>
         <img
-  src="/laptop-inovaseg.jpg"
-  alt="Computador InovaSeg"
-  className="rounded shadow-md"
-/>
+          src="/laptop-Inovaseg.jpg"
+          alt="Computador InovaSeg"
+          className="rounded shadow-md"
+        />
       </section>
 
     </div>
