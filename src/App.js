@@ -16,10 +16,10 @@ function App() {
       <header className="bg-gray-300 py-4 px-6 flex justify-between items-center">
   {/* Logo */}
   <img 
-    src="/logo-inovaseg.JPEG" 
-    alt="InovaSeg Logo" 
-    className="h-10" // ajusta a altura (10 = 40px)
-  />
+  src="/logo.inova.seg.jpg" 
+  alt="InovaSeg Logo" 
+  className="h-10"
+/>
 
   {/* Menu */}
   <nav className="flex gap-6 text-sm font-semibold text-gray-700">
@@ -88,8 +88,8 @@ function App() {
           </p>
         </div>
         <img
-  src="/notebook.jpg"
-  alt="Computador"
+  src="/laptop.inovaseg.jpg"
+  alt="Computador InovaSeg"
   className="rounded shadow-md"
 />
       </section>
