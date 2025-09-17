@@ -7,12 +7,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; }
+    body { font-family: Arial, sans-serif; margin: 0; padding-top: 70px; }
 
     /* Navbar fixa */
-    .navbar {
-      background-color: #f8f9fa;
-    }
+    .navbar { background-color: #f1f1f1; }
+    .navbar-brand img { height: 40px; }
 
     /* Hero */
     .hero {
@@ -21,44 +20,32 @@
       padding: 100px 20px;
       text-align: center;
     }
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
+    .hero h1 { font-size: 2.2rem; font-weight: bold; }
+    .hero .btn-warning { font-weight: 600; margin-top: 20px; }
 
-    /* Botão amarelo */
-    .hero .btn-warning {
-      font-weight: bold;
-      margin-top: 20px;
-    }
-
-    /* Cards (botões interativos abaixo) */
+    /* Cards Serviços */
     .service-card {
       text-align: center;
       border: none;
-      padding: 30px;
+      padding: 25px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       transition: 0.3s;
       background: #fff;
+      border-radius: 8px;
     }
     .service-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 15px rgba(0,0,0,0.2);
     }
+    .service-card i { font-size: 2rem; margin-bottom: 10px; }
 
-    /* Fundo cinza leve nas seções */
-    section.bg-light {
-      background-color: #f8f9fa !important;
-    }
+    /* Detalhes */
+    #detalhes h4 { margin-top: 30px; }
 
-    /* Footer */
-    footer {
-      background: #0d47a1;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      margin-top: 30px;
-    }
+    /* Engenharia Especializada */
+    #especializada img { max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+    footer { background: #0d47a1; color: white; text-align: center; padding: 15px 0; }
   </style>
 </head>
 <body>
@@ -66,7 +53,9 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="#home">InovaSeg</a>
+    <a class="navbar-brand" href="#home">
+      <img src="logo.png" alt="Logo"> <!-- Troque pelo seu logo -->
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -84,52 +73,182 @@
 <!-- Hero -->
 <section id="home" class="hero">
   <div class="container">
-    <h1>Engenharia de Segurança do Trabalho & eSocial</h1>
+    <h1>Engenharia de Segurança do Trabalho</h1>
     <p class="lead">Conformidade, segurança e suporte especializado para sua empresa.</p>
     <a href="#contato" class="btn btn-warning btn-lg">Solicite uma Proposta</a>
   </div>
 </section>
 
-<!-- Cards Botões Interativos -->
+<!-- Empresa -->
+<section id="empresa" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Sobre Nós</h2>
+    <p class="lead text-muted">Criada por Engenheiro de Segurança do Trabalho, nossa empresa atua há anos no mercado, oferecendo soluções completas em saúde e segurança no trabalho.</p>
+  </div>
+</section>
+
+<!-- Serviços -->
 <section id="servicos" class="py-5">
   <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Nossos Serviços</h2>
+      <p class="text-muted">Soluções personalizadas em SST</p>
+    </div>
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="service-card">
-          <i class="fas fa-clipboard-check fa-2x text-primary mb-3"></i>
-          <h5>Conformidade eSocial</h5>
-          <p>Atendemos todas as exigências legais e normativas do eSocial.</p>
-        </div>
+
+      <div class="col-md-3">
+        <a href="#srv-consultoria" class="text-decoration-none text-dark">
+          <div class="service-card">
+            <i class="fas fa-briefcase-medical text-primary"></i>
+            <h5>Consultoria em SST</h5>
+            <p>Soluções em saúde e segurança no trabalho.</p>
+          </div>
+        </a>
       </div>
-      <div class="col-md-4">
-        <div class="service-card">
-          <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
-          <h5>Redução de Acidentes</h5>
-          <p>Consultorias eficazes que reduzem riscos no ambiente de trabalho.</p>
-        </div>
+
+      <div class="col-md-3">
+        <a href="#srv-laudos" class="text-decoration-none text-dark">
+          <div class="service-card">
+            <i class="fas fa-file-alt text-success"></i>
+            <h5>Laudos & LTCAT</h5>
+            <p>Documentos técnicos essenciais em SST.</p>
+          </div>
+        </a>
       </div>
-      <div class="col-md-4">
-        <div class="service-card">
-          <i class="fas fa-headset fa-2x text-primary mb-3"></i>
-          <h5>Suporte 24h</h5>
-          <p>Equipe técnica disponível para emergências e suporte especializado.</p>
-        </div>
+
+      <div class="col-md-3">
+        <a href="#srv-pgr" class="text-decoration-none text-dark">
+          <div class="service-card">
+            <i class="fas fa-tasks text-warning"></i>
+            <h5>PGR & PCMSO</h5>
+            <p>Gestão de riscos e saúde ocupacional.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="#srv-ppp" class="text-decoration-none text-dark">
+          <div class="service-card">
+            <i class="fas fa-id-card text-info"></i>
+            <h5>PPP</h5>
+            <p>Histórico de saúde para INSS e eSocial.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="#srv-ergonomia" class="text-decoration-none text-dark">
+          <div class="service-card">
+            <i class="fas fa-user-check text-danger"></i>
+            <h5>Análise Ergonômica</h5>
+            <p>Conforto e produtividade no ambiente.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="#srv-insalubridade" class="text-decoration-none text-dark">
+          <div class="service-card">
+            <i class="fas fa-exclamation-triangle text-secondary"></i>
+            <h5>Insalubridade & Periculosidade</h5>
+            <p>Laudos adicionais de risco ocupacional.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="#srv-treinamentos" class="text-decoration-none text-dark">
+          <div class="service-card">
+            <i class="fas fa-chalkboard-teacher text-success"></i>
+            <h5>Treinamentos NR</h5>
+            <p>Capacitações com emissão de certificados.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="#srv-esocial" class="text-decoration-none text-dark">
+          <div class="service-card">
+            <i class="fas fa-database text-warning"></i>
+            <h5>eSocial</h5>
+            <p>Envio completo dos eventos de SST.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Detalhes dos Serviços -->
+<section id="detalhes" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Resumo dos Serviços</h2>
+
+    <div id="srv-consultoria" class="mb-5">
+      <h4><i class="fas fa-briefcase-medical text-primary"></i> Consultoria em SST</h4>
+      <p>Elaboração e gestão de programas de saúde e segurança no trabalho, garantindo conformidade legal e redução de riscos ocupacionais.</p>
+    </div>
+
+    <div id="srv-laudos" class="mb-5">
+      <h4><i class="fas fa-file-alt text-success"></i> Laudos & LTCAT</h4>
+      <p>Elaboração de Laudos Técnicos como o LTCAT, que atesta as condições ambientais do trabalho e serve de base para INSS e aposentadoria especial.</p>
+    </div>
+
+    <div id="srv-pgr" class="mb-5">
+      <h4><i class="fas fa-tasks text-warning"></i> PGR & PCMSO</h4>
+      <p>O <b>PGR</b> cuida do gerenciamento de riscos ocupacionais. O <b>PCMSO</b> define ações médicas periódicas para cuidar da saúde dos colaboradores.</p>
+    </div>
+
+    <div id="srv-ppp" class="mb-5">
+      <h4><i class="fas fa-id-card text-info"></i> PPP</h4>
+      <p>Documento que reúne histórico de exposição a riscos no trabalho, obrigatório para o eSocial e processos de aposentadoria especial.</p>
+    </div>
+
+    <div id="srv-ergonomia" class="mb-5">
+      <h4><i class="fas fa-user-check text-danger"></i> Análise Ergonômica</h4>
+      <p>Relatórios ergonômicos que adequam postos de trabalho, prevenindo lesões e melhorando a qualidade de vida ocupacional.</p>
+    </div>
+
+    <div id="srv-insalubridade" class="mb-5">
+      <h4><i class="fas fa-exclamation-triangle text-secondary"></i> Insalubridade & Periculosidade</h4>
+      <p>Identificação, avaliação e emissão de laudos técnicos que comprovam adicionais de insalubridade e periculosidade.</p>
+    </div>
+
+    <div id="srv-treinamentos" class="mb-5">
+      <h4><i class="fas fa-chalkboard-teacher text-success"></i> Treinamentos NR</h4>
+      <p>Cursos exigidos por normas regulamentadoras, como CIPA, EPIs e primeiros socorros, garantindo capacitação validada por certificados.</p>
+    </div>
+
+    <div id="srv-esocial" class="mb-5">
+      <h4><i class="fas fa-database text-warning"></i> eSocial</h4>
+      <p>Plataforma do Governo para unificação das informações trabalhistas, previdenciárias e de SST.<br>
+         Inclui eventos: <br>✅ S-2210 Acidente de Trabalho <br>✅ S-2220 Monitoramento da Saúde <br>✅ S-2240 Condições Ambientais de Trabalho.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Engenharia Especializada -->
+<section id="especializada" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Laptop à esquerda -->
+      <div class="col-md-6 text-center">
+        <img src="engenharia.jpg" alt="Engenharia Especializada">
+      </div>
+      <!-- Texto à direita -->
+      <div class="col-md-6">
+        <h3 class="fw-bold text-primary">Sobre Nós</h3>
+        <p>Empresa especializada em Engenharia de Segurança do Trabalho, atuamos com foco em conformidade legal, redução de riscos e consultoria dedicada.</p>
+        <h3 class="fw-bold text-primary mt-4">Engenharia Especializada</h3>
+        <p>Nossa equipe oferece treinamentos, consultorias e apoio técnico para garantir segurança e conformidade em sua empresa.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Empresa -->
-<section id="empresa" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-3">Nossa Empresa</h2>
-    <p class="lead text-muted">Especialistas em Engenharia de Segurança do Trabalho, ajudamos empresas a garantir 
-      conformidade legal, reduzir riscos e promover um ambiente de trabalho seguro.</p>
-  </div>
-</section>
-
 <!-- Contato -->
-<section id="contato" class="py-5">
+<section id="contato" class="py-5 bg-light">
   <div class="container text-center">
     <h2 class="fw-bold mb-3">Fale Conosco</h2>
     <p><i class="fab fa-whatsapp text-success"></i> (77) 99843-1179</p>
@@ -144,4 +263,4 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+            </html>
