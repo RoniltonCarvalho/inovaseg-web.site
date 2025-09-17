@@ -16,7 +16,7 @@ function App() {
       <header className="bg-gray-300 py-4 px-6 flex justify-between items-center">
   {/* Logo */}
   <img 
-  src="/logo.inova.seg.jpg" 
+  src="/logo-inovaseg.jpg" 
   alt="InovaSeg Logo" 
   className="h-10"
 />
@@ -88,7 +88,7 @@ function App() {
           </p>
         </div>
         <img
-  src="/laptop.inovaseg.jpg"
+  src="/laptop-inovaseg.jpg"
   alt="Computador InovaSeg"
   className="rounded shadow-md"
 />
