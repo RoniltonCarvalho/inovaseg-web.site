@@ -3,108 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SST Consultoria - Home</title>
-  <!-- Bootstrap CSS -->
+  <title>InovaSeg - Engenharia de Segurança do Trabalho</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+    body { font-family: Arial, sans-serif; }
+
+    /* Navbar fixa */
+    .navbar {
+      background-color: #f8f9fa;
     }
-    .hero-section {
-      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+
+    /* Hero */
+    .hero {
+      background-color: #0d47a1;
       color: white;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
+      padding: 100px 20px;
+      text-align: center;
     }
-    .hero-section h1 span {
-      color: #ffc107;
-    }
-    .btn-warning {
+    .hero h1 {
+      font-size: 2.5rem;
       font-weight: bold;
     }
-    .btn-outline-light {
+
+    /* Botão amarelo */
+    .hero .btn-warning {
       font-weight: bold;
+      margin-top: 20px;
+    }
+
+    /* Cards (botões interativos abaixo) */
+    .service-card {
+      text-align: center;
+      border: none;
+      padding: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      background: #fff;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Fundo cinza leve nas seções */
+    section.bg-light {
+      background-color: #f8f9fa !important;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
-  <!-- INÍCIO HOME -->
-  <section id="home" class="hero-section">
-    <div class="container">
-      <div class="row align-items-center">
-        
-        <!-- Texto -->
-        <div class="col-lg-6">
-          <h1 class="display-4 fw-bold mb-4">
-            Segurança do Trabalho com <span>Confiança</span>
-          </h1>
-          <p class="lead mb-4">
-            Somos uma empresa fundada por <strong>Engenheiro de Segurança do Trabalho</strong>, 
-            com experiência sólida no mercado, oferecendo soluções completas 
-            em Saúde e Segurança do Trabalho para garantir conformidade legal 
-            e o bem-estar dos colaboradores.
-          </p>
-
-          <!-- Botões -->
-          <div class="d-flex gap-3">
-            <a href="#servicos" class="btn btn-warning btn-lg">
-              <i class="fas fa-cogs me-2"></i> Nossos Serviços
-            </a>
-            <a href="#contato" class="btn btn-outline-light btn-lg">
-              <i class="fas fa-phone me-2"></i> Fale Conosco
-            </a>
-          </div>
-        </div>
-
-        <!-- Ícone -->
-        <div class="col-lg-6 text-center">
-          <i class="fas fa-hard-hat" style="font-size: 200px; color: #ffc107;"></i>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- FIM HOME -->
-
-  <!-- IMPORT SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SST Consultoria</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; }
-    .hero-section { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; min-height: 100vh; display: flex; align-items: center; }
-    .hero-section h1 span { color: #ffc107; }
-    .service-card { transition: 0.3s; border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    .service-card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.2); }
-    footer { background: #1e3c72; color: white; padding: 20px 0; text-align: center; }
-  </style>
-</head>
-<body>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#home">SST Consultoria</a>
+    <a class="navbar-brand fw-bold text-primary" href="#home">InovaSeg</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#empresa">Empresa</a></li>
         <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
       </ul>
@@ -112,72 +81,67 @@
   </div>
 </nav>
 
-<!-- HOME -->
-<section id="home" class="hero-section">
+<!-- Hero -->
+<section id="home" class="hero">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <h1 class="display-4 fw-bold mb-4">
-          Segurança do Trabalho com <span>Confiança</span>
-        </h1>
-        <p class="lead">Empresa fundada por Engenheiro de Segurança do Trabalho, com
-          experiência sólida no mercado. Oferecemos soluções completas em SST
-          para garantir conformidade legal e o bem-estar dos colaboradores.</p>
-        <div class="d-flex gap-3 mt-4">
-          <a href="#servicos" class="btn btn-warning btn-lg"><i class="fas fa-cogs me-2"></i> Serviços</a>
-          <a href="#contato" class="btn btn-outline-light btn-lg"><i class="fas fa-phone me-2"></i> Contato</a>
-        </div>
-      </div>
-      <div class="col-lg-6 text-center">
-        <i class="fas fa-hard-hat" style="font-size:180px; color: #ffc107;"></i>
-      </div>
-    </div>
+    <h1>Engenharia de Segurança do Trabalho & eSocial</h1>
+    <p class="lead">Conformidade, segurança e suporte especializado para sua empresa.</p>
+    <a href="#contato" class="btn btn-warning btn-lg">Solicite uma Proposta</a>
   </div>
 </section>
 
-<!-- SOBRE -->
-<section id="sobre" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-3">Sobre Nós</h2>
-    <p class="lead text-muted">Criada por Engenheiro de Segurança do Trabalho, nossa empresa atua há anos no mercado,
-      oferecendo soluções completas em saúde e segurança no trabalho.</p>
-  </div>
-</section>
-
-<!-- SERVIÇOS -->
+<!-- Cards Botões Interativos -->
 <section id="servicos" class="py-5">
   <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Nossos Serviços</h2>
-      <p class="text-muted">Soluções personalizadas em SST</p>
-    </div>
     <div class="row g-4">
-      <div class="col-md-4"><div class="card service-card p-4 text-center"><i class="fas fa-briefcase-medical fa-2x mb-3 text-primary"></i><h5>Consultoria em SST</h5></div></div>
-      <div class="col-md-4"><div class="card service-card p-4 text-center"><i class="fas fa-file-alt fa-2x mb-3 text-success"></i><h5>Laudos & LTCAT</h5></div></div>
-      <div class="col-md-4"><div class="card service-card p-4 text-center"><i class="fas fa-tasks fa-2x mb-3 text-warning"></i><h5>PGR & PCMSO</h5></div></div>
-      <div class="col-md-4"><div class="card service-card p-4 text-center"><i class="fas fa-file-signature fa-2x mb-3 text-info"></i><h5>PPP</h5></div></div>
-      <div class="col-md-4"><div class="card service-card p-4 text-center"><i class="fas fa-user-check fa-2x mb-3 text-danger"></i><h5>Análise Ergonômica</h5></div></div>
-      <div class="col-md-4"><div class="card service-card p-4 text-center"><i class="fas fa-exclamation-triangle fa-2x mb-3 text-secondary"></i><h5>Insalubridade & Periculosidade</h5></div></div>
-      <div class="col-md-4"><div class="card service-card p-4 text-center"><i class="fas fa-chalkboard-teacher fa-2x mb-3 text-success"></i><h5>Treinamentos NR</h5></div></div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="fas fa-clipboard-check fa-2x text-primary mb-3"></i>
+          <h5>Conformidade eSocial</h5>
+          <p>Atendemos todas as exigências legais e normativas do eSocial.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+          <h5>Redução de Acidentes</h5>
+          <p>Consultorias eficazes que reduzem riscos no ambiente de trabalho.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <i class="fas fa-headset fa-2x text-primary mb-3"></i>
+          <h5>Suporte 24h</h5>
+          <p>Equipe técnica disponível para emergências e suporte especializado.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CONTATO -->
-<section id="contato" class="py-5 bg-light">
+<!-- Empresa -->
+<section id="empresa" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Nossa Empresa</h2>
+    <p class="lead text-muted">Especialistas em Engenharia de Segurança do Trabalho, ajudamos empresas a garantir 
+      conformidade legal, reduzir riscos e promover um ambiente de trabalho seguro.</p>
+  </div>
+</section>
+
+<!-- Contato -->
+<section id="contato" class="py-5">
   <div class="container text-center">
     <h2 class="fw-bold mb-3">Fale Conosco</h2>
-    <p class="mb-4">Agende uma visita ou solicite um orçamento</p>
     <p><i class="fab fa-whatsapp text-success"></i> (77) 99843-1179</p>
     <p><i class="fas fa-envelope text-primary"></i> oesteengseg@gmail.com</p>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <footer>
-  <p>&copy; 2025 SST Consultoria - Todos os direitos reservados</p>
+  <p>&copy; 2025 InovaSeg - Todos os direitos reservados</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-  </html>
+</html>
